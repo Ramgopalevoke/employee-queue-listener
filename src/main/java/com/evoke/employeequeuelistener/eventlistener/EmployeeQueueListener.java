@@ -12,7 +12,7 @@ public class EmployeeQueueListener {
 
     @RabbitListener(queues = MQConfig.CREATION_QUEUE)
     public void employeeCreationListener(String notification) {
-        logger.info(notification);
+        logger.trace(notification);
     }
 
 }
